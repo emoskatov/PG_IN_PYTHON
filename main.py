@@ -249,7 +249,6 @@ with psycopg2.connect(database="clients_db", user="postgres",
     create_db(connect=connection)  # вызывайте функции здесь
     add_client(connection, "Ivan", "Ivanov", "ivan@test.ru")  # Добавление пользователя без номера телефона
     add_client(connection, "Ivan", "Sidorov", "Sidorov@test.ru",
-            
                "+7(999)888-77-66")  # Добавление пользователя с номером телефона
     add_client(connection, "Sergey", "Sergeev", "Sergey@mail.ru", "+7(999)800-00-00")
     add_phone(connection, 1, "+7(888)999-33-11")  # Добавление одного номера телефона для существующего клиента
